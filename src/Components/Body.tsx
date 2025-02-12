@@ -123,7 +123,7 @@ export const Body = () => {
                 }       
             </AnimatePresence>
             {exit &&
-                <div className='flex flex-col gap-5 items-center'>
+                <div className='flex flex-col gap-5 max-md:p-5 box-border items-center'>
                         <motion.div 
                         key={details?.plate}
                         className='w-96 h-48 p-3 flex flex-col gap-3  shadow-lg shadow-black border-solid relative bg-[#fcf8f8] rounded-md' 
