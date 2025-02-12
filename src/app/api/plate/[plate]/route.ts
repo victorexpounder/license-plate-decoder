@@ -1,9 +1,9 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import lgas from '../../../data/lga.json';
 import states from '../../../data/states.json';
 import stateDetails from '../../../data/stateDetails.json';
 
-export async function GET(req: Request, { params }: { params: { plate: string } }) {
+export async function GET(req: NextRequest, { params }: { params: { plate: string } }) {
   const { plate } =  params;
   let code: string, 
   plateNum: string,
